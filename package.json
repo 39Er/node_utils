@@ -1,0 +1,29 @@
+{
+  "name": "node_utils",
+  "version": "1.0.0",
+  "description": "some utils for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "util"
+  ],
+  "author": "39Er",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.26.1",
+    "nodemailer": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "mocha": "^3.3.0",
+    "should": "^11.2.1"
+  }
+}
