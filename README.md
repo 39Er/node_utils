@@ -14,6 +14,8 @@
 > eslint: check code styles [github地址](https://github.com/eslint/eslint)<br/>
 > mocha: unit test [github地址](https://github.com/mochajs/mocha)<br/>
 > should.js: BDD style assertions for node.js [github地址](https://github.com/shouldjs/should.js)<br/>
+> bunyan: log libary form node.js [github地址](https://github.com/trentm/node-bunyan)<br/>
+> lodash: A modern JavaScript utility library delivering modularity, performance & extras. [github地址](https://github.com/lodash/lodash)<br/>
 
 ## Code Styles ##
 
@@ -87,3 +89,32 @@ Example:
 > Attention: 163邮箱开启授权码设置
 
 ![163邮箱设置](http://i.imgur.com/qPPNMoC.png)
+
+### 2. ChildProcessor ###
+
+> Effectively prevent Windows Chinese garbled
+
+Methods:
+
+- exec()
+- execFile()
+- spawn()
+
+> 参数详见node:[child_process](https://nodejs.org/dist/latest-v7.x/docs/api/child_process.html)
+
+Example:
+
+	const ChildProcessor = require('./lib/ChildProcessor');
+	
+	let exec = async () => {
+	  let cp = new ChildProcessor();
+	  try {
+	    let result = await cp.exec('git status');
+	    console.log(result);
+	  } catch (e) {
+	    console.log(e);
+	  }
+	};
+	
+	exec();
+
