@@ -104,17 +104,55 @@ Methods:
 
 Example:
 
-	const ChildProcessor = require('./lib/ChildProcessor');
-	
-	let exec = async () => {
-	  let cp = new ChildProcessor();
-	  try {
-	    let result = await cp.exec('git status');
-	    console.log(result);
-	  } catch (e) {
-	    console.log(e);
-	  }
-	};
-	
-	exec();
+- **exec()**
+
+		const ChildProcessor = require('./lib/ChildProcessor');
+		
+		let exec = async () => {
+		  let cp = new ChildProcessor();
+		  try {
+		    let result = await cp.exec('git status');
+		    console.log(result);
+		  } catch (e) {
+		    console.log(e);
+		  }
+		};
+		
+		exec();
+
+- **execFile()**
+
+		const ChildProcessor = require('./lib/ChildProcessor');
+		
+		let execFile = async () => {
+		  let cp = new ChildProcessor();
+		  try {
+		    let result = await cp.execFile('node', ['-h']);
+		    console.log(result.stdout);
+		  } catch (e) {
+		    console.log(e);
+		  }
+		};
+		
+		execFile();
+
+- **spawn()**
+
+		const ChildProcessor = require('./lib/ChildProcessor');
+		
+		let spawn = async () => {
+		  let cp = new ChildProcessor();
+		  try {
+		    let result = await cp.spawn('cmd', ['/c', 'dir']);
+		    console.log(result.stdout);
+		  } catch (e) {
+		    console.log(e);
+		  }
+		};
+		
+		spawn();
+
+
+
+
 
