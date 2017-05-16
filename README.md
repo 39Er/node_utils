@@ -103,6 +103,8 @@ Methods:
 
 > 参数详见node:[child_process](https://nodejs.org/dist/latest-v7.x/docs/api/child_process.html)
 
+> 对于child_process方法的选择详见：[我的blog](https://github.com/39Er/blog/issues/11)
+
 Example:
 
 - **exec()**
