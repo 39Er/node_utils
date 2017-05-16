@@ -32,6 +32,9 @@
         ],
         "prefer-const": [
             0
+        ],
+        "prefer-template": [
+            0
         ]
     },
     "env": {

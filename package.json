@@ -13,6 +13,7 @@
   "author": "39Er",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "bufferhelper": "^0.2.1",
     "bunyan": "^1.8.10",
     "config": "^1.26.1",
