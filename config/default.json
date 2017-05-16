@@ -5,8 +5,13 @@
     // "host": "smtp.163.com",
     "auth": {
       "user": "mailsender999@163.com",
-      "pass": "******"  //  163邮箱需使用授权码作为密码
+      "pass": "******" //  163邮箱需使用授权码作为密码
     }
   },
-  "mailMaxRetry": 5
+  "mailMaxRetry": 5,
+  "loggerConfig": {
+    "name": "node_utils",
+    "level": "debug",
+    "src": false
+  }
 }

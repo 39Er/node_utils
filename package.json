@@ -13,7 +13,12 @@
   "author": "39Er",
   "license": "ISC",
   "dependencies": {
+    "bufferhelper": "^0.2.1",
+    "bunyan": "^1.8.10",
     "config": "^1.26.1",
+    "ftp": "^0.3.10",
+    "iconv-lite": "^0.4.17",
+    "lodash": "^4.17.4",
     "nodemailer": "^4.0.1"
   },
   "devDependencies": {
