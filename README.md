@@ -1,7 +1,8 @@
 # node_utils #
 **some utils for node.js**
 # Entry #
-[1.MailSender](https://github.com/39Er/node_utils/blob/master/README.md#1-mailsender)
+- [1.MailSender](https://github.com/39Er/node_utils/blob/master/README.md#1-mailsender)
+- [2.ChildProcessor](https://github.com/39Er/node_utils/blob/master/README.md#2-childprocessor)
 ## Env ##
 
 	node.js: v7.8.0	
