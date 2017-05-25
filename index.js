@@ -1,16 +1,15 @@
 'use strict';
 
-const ChildProcessor = require('./lib/ChildProcessor');
+const Git = require('./lib/Git');
 
-let spawn = async () => {
-  let cp = new ChildProcessor();
+let git = new Git('D:/git/testGit');
+
+async function a() {
   try {
-    let result = await cp.spawn('cmd', ['/c', 'dir']);
-    console.log(result.stdout);
+    let result = await git.status();
+    console.log(result);
   } catch (e) {
     console.log(e);
   }
-};
-
-spawn();
-
+}
+a();
