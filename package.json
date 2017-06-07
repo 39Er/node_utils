@@ -16,11 +16,13 @@
     "bluebird": "^3.5.0",
     "bufferhelper": "^0.2.1",
     "bunyan": "^1.8.10",
+    "bunyan-rotate-file-stream": "^1.0.0",
     "config": "^1.26.1",
     "diff2html": "^2.3.0",
     "ftp": "^0.3.10",
     "iconv-lite": "^0.4.17",
     "lodash": "^4.17.4",
+    "moment": "^2.18.1",
     "nodemailer": "^4.0.1"
   },
   "devDependencies": {
