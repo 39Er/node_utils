@@ -13,6 +13,10 @@
   ],
   "author": "39Er",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/39Er/node_utils.git"
+  },
   "dependencies": {
     "bluebird": "^3.5.0",
     "bufferhelper": "^0.2.1",
