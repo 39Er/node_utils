@@ -12,6 +12,7 @@
   "loggerConfig": {
     "name": "node_utils",
     "level": "debug",
-    "src": false
+    "src": false,
+    "errorLogPath": "/logs/error.log"
   }
 }

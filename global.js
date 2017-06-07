@@ -7,16 +7,16 @@ const Mystream = require('bunyan-rotate-file-stream');
 
 module.exports.config = config;
 module.exports.logger = bunyan.createLogger({
-  name: 'main',
+  name: config.get('loggerConfig.name'),
   serializers: bunyan.stdSerializers,
-  level: 'info',
+  src: config.get('loggerConfig.src'),
   streams: [
     {
       level: 'error',
       type: 'raw',
-      stream: new Mystream(path.join(__dirname, 'logs/error.log')),
+      stream: new Mystream(path.join(__dirname, config.get('loggerConfig.errorLogPath'))),
     }, {
-      level: 'debug',
+      level: config.get('loggerConfig.level'),
       stream: process.stdout,
     },
   ],

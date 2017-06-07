@@ -4,7 +4,8 @@
   "description": "some utils for node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "log": "bunyan ./logs/error.log"
   },
   "keywords": [
     "node",
@@ -16,7 +17,7 @@
     "bluebird": "^3.5.0",
     "bufferhelper": "^0.2.1",
     "bunyan": "^1.8.10",
-    "bunyan-rotate-file-stream": "^1.0.0",
+    "bunyan-rotate-file-stream": "^1.1.1",
     "config": "^1.26.1",
     "diff2html": "^2.3.0",
     "ftp": "^0.3.10",
